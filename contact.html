@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<script>
+    function submit(){
+        let input = document.getElementById('input')
+        if (input ==" "){
+            res.send("Fill the blanks first")
+            let elsey= document.getElementById('elsey')
+            elsey.style.display='block'
+            console.log("Fill the blanks first")
+        }else{
+            let ji= document.getElementById('ji')
+            ji.style.display = 'block';
+            let btn = document.getElementById('btn')
+            btn.innerHTML="Submited";
+            let form =document.getElementById('form')
+            form.style.display='none';
+        }
+
+ 
+        
+        
+        // if (form!=""){
+        //     let ji= document.getElementById('ji')
+        //     ji.style.display = 'block';
+        //     let btn = document.getElementById('btn')
+        //     btn.innerHTML="Submited";
+        //     let form =document.getElementById('form')
+        //     form.style.display='none';
+        //     // var process = document.createElement('span');
+        //     // process.appendChild(document.createTextNode('processing...'));
+        //     // form.parentNode.insertBefore(process.form)
+        // } else{
+        //     let elsey= document.getElementById('else')
+        //     elsey.style.display='flex';
+        //     res.send("Fill The Blanks Completely")
+        //     console.log("fill in")
+        // }
+    
+    }
+        
+    
+</script>
+<body>
+    <h1>Contact Us</h1>
+
+    <img id="logo" src="https://www.kindpng.com/picc/m/75-759584_coffee-shop-logo-design-logo-for-coffe-shop.png" alt="logo"> 
+    <form class="form" id="form">
+        <input type="text"class="input" placeholder="Name" name="name">
+        <input type="email"class="input" id="input" onclick="submit()" name="phone" placeholder="Email Address">
+        <input type="number" class="input"  name="phone" placeholder="Phone">
+        <input type="text" class="input"  name="address" placeholder="Address">
+        <input type="text-area" class="input"  name="msg" placeholder= "Type Your Message">
+    </form>
+    <button id="btn" onclick="submit()"> Submit </button>
+    <div id="ji" onclick="submit()"><a href="/home"> This form has been Submitted, You can Go Back</a></div>
+    <div class="home"><a href="/home"> Go Back to home Page</a></div>
+    <div class="elsey" id="elsey" onclick="submit()"> Fill in the blanks, FIRST</div>
+    <style>
+        .form{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 4px solid black;
+            background-color: antiquewhite;
+        }
+        .input{
+            display: block;
+            width: 33%;
+            height: 123px;
+            color: black;
+            justify-content:center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 23px;
+            border: 3px solid black;
+            
+        }
+        h1{
+            font-size: 43px;
+            text-align:center;
+
+        }
+        .elsey{
+            background-color: green;
+            font-size: 34px;
+            display: none;
+        }
+        #btn{
+            margin: 20px;
+            display: block;
+            color:black;
+            width: 13%;
+            height: 43px;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            background-color:beige;
+            margin-left: 623px;
+            cursor: pointer;
+            border-radius: 14px;
+            font-size: 29px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #ji{
+            display: none;
+            background-image: linear-gradient(to right, rgba(255,0,0,0),rgba(255,0,0,1));
+            color: black;
+            border: 3px solid black;
+            color: black;
+            border-radius: 10px;
+            width:100%;
+            height: 53px;
+            padding: 8px;
+            font-size: 43px;
+            font-family:'Times New Roman', Times, serif;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .home a{
+            position: absolute;
+            top:779px;
+            display: flex;
+            list-style-type: none;
+            text-decoration: none;
+            list-style: none;
+            font-style: none;
+            
+        }
+
+        #logo{
+             cursor: pointer;
+             display: flex;
+             left:0px;
+             top: 17px;
+             position: absolute;
+             margin-inline-start: 1px;
+            height: 72px;
+            border: 4px solid black;
+    
+}
+    </style>
+
+    
+
+</body>
+</html>

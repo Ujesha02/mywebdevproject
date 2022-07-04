@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeSip</title>
+    <script src="https://kit.fontawesome.com/4bee9b0765.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        
+body{
+    background: #000;
+    background: url('https://media.gettyimages.com/photos/traditional-coffee-cup-with-heartshaped-steam-on-rustic-wood-picture-id517518956?b=1&k=20&m=517518956&s=170667a&w=0&h=JTN8YiHPlvKpci_HQ5fbRkg12QIGgxU1my8dkL6moNk=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+
+    
+    nav{ 
+        background-color:rgb(17, 12, 2);
+    height: 23%;
+    width: 33%;
+    
+}
+ul{
+    padding:15px 15px;
+}
+.con{
+    font-size: 23px;
+    display: flex;
+    list-style: none;
+    margin-left: 567px;
+    
+}
+
+nav ul li a{
+    list-style: none;
+    font-style: none;
+    padding:15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+nav div #logo{
+    cursor: pointer;
+    display: flex;
+    top: 17px;
+    position: absolute;
+    margin-inline-start: 1px;
+    height: 72px;
+    
+}
+h2{
+    color: white;
+    position: absolute;
+    top: 137px;
+    left: 84px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 23px 23px;
+    font-size: 34px;
+}
+.para{
+    position: absolute;
+    top: 289px;
+    font-size: 18px;
+    left: 84px;
+    color: white;
+}
+#getyours{
+    cursor: pointer;
+    position: absolute;
+    left:84px;
+    background-color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top:340px;
+    height: 44px;
+    
+}
+.fa-solid{
+    cursor: pointer;
+    color: white;
+    padding:0px 15px
+}
+.fa-brands{
+    padding:0px 15px;
+    color: white;
+    cursor:pointer;
+
+}
+.nav .con .fa-brands a{
+    display: block;
+    margin: 1.5rem;
+    
+}
+.nav .con .fa-brands #name{
+     display: none;
+ }
+
+ .nav .con .fa-brands #name{
+     height: 29px;
+     font-size:large;
+     color: black;
+     align-items: center;
+     justify-self: center;
+ }
+.nav .con .fa-solid .box .coffee{
+    display: inline-block;
+    height: 2px;
+    width:3px;
+ }
+ .nav .con #cart.box{
+     display: none;
+ }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="con">
+            <li class="item"><a href="/home">Home</a></li>
+            <li cl ass="item"><a href="/about">About</a></li>
+            <li class="item"><a href="/services">Services</a></li>
+            <li class="item"><a href="/contact">Contact</a></li>
+            <i class="fa-brands fa-searchengin" id="search" onclick="search()"> <input type="search" placeholder="Search Here..." id="name"></i>
+            <i class="fa-solid fa-cart-shopping" id="cart" onclick="cart()"> </i> <div class="box">
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkAikRlvcO4beK27hns1d2FpHREy54MsUzCA&usqp=CAU" alt=""> -->
+                <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15pTsY9MPwoi8IWsZkuS7nB5EfERk9WtWsQ&usqp=CAU" class="coffee" alt=""> -->
+                <!-- <img src="https://www.ndtv.com/cooks/images/coffee.6.jpg" class="coffee" alt=""> -->
+                
+            </div>
+        </ul>
+
+    <div>    
+        <img id="logo" src="https://www.kindpng.com/picc/m/75-759584_coffee-shop-logo-design-logo-for-coffe-shop.png" alt="logo"> 
+    </div>
+    </nav>
+    
+    </div>
+    <h2> FRESH COFFEE IN <br>THE MORNING</h2>
+    <div class="para"> Lorem ilor sit amet consectetur adipisicing elit. Culpa illo voluptas possimus enim vel deserunt animi <br> obcaecati quaerat temporibus haru ad consequuntur, maxime atque consequatur rerum in nihil id sapiente ex ab.</div>
+    <button id="getyours" onclick="getyoursnow()">Get Yours Now</button>
+    
+<script>
+    function search(){
+        let search= document. getElementById('search')
+        let name= document.getElementById('name')
+        name.style.display="block"}
+
+
+
+    function cart(){
+        let cart = document.getElementById('cart')
+       cart.innerHTML = "Your Cart is empty!"
+       
+    
+    
+    }
+
+    function getyoursnow(){
+        let getyoursnow= document.getElementById('getyours')
+        getyoursnow.innerHTML="<b> OPEN SERVICES </b>"
+    }
+    
+</script>
+    
+</body>
+</html>
